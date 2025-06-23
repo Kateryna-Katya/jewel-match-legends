@@ -1,0 +1,283 @@
+/* Home */
+.home-section{
+    background-image: url("/img/home/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 800px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+.home-big-jewel,
+.home-small-jewel{
+    display: none;
+}
+.home-btn{
+    margin-top: 416px;
+    width: 243px;
+    height: 70px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+@media only screen and (min-width: 1439px) {
+.home-section{
+    background-image: url("/img/home/desk.png");
+    height: 820px;
+}
+.home-container{
+    position: relative;
+}
+.home-btn{
+    margin-top: 500px;
+}
+.home-big-jewel{
+    display: block;
+    position: absolute;
+    bottom: -200px;
+    right: 100px;
+    width: 188px;
+    height: 157px;
+    z-index: 1;
+}
+.home-small-jewel{
+    display: block;
+        position: absolute;
+        bottom: -206px;
+        right: 186px;
+        width: 100px;
+     height: 84px;
+        z-index: 2;
+}
+}
+/* About The Game */
+.about-container{
+    padding-top: 80px;
+}
+.about-img{
+ margin-bottom: 22px;
+ margin-top: 28px;
+}
+.about-text{
+    width: 335px;
+}
+@media only screen and (min-width: 1439px) {
+ .about-container{
+    margin-top: 75px;
+ }
+.about-wrapper{
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.about-img{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.about-text{
+    width: 522px;
+}
+}
+/* Gallery */
+.gallery-title{
+    margin-bottom: 28px;
+}
+.gallery-swiper-slide{
+    cursor: pointer;
+}
+.custom-navigation{
+    display: none;
+}
+@media only screen and (min-width: 1439px) {
+.gallery-title{
+    margin-bottom: 36px;
+}
+.custom-navigation{
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 28px;
+}
+.custom-arrow{
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+}
+.gallery-custom-next{
+    transform: rotate(180deg);
+}
+}
+/* Legendary Relics */
+.relics-title{
+    margin-bottom: 28px;
+}
+.relics-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.relics-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.relics-item-wrapper{
+    width: 157px;
+        height: 97px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+}
+.relics-jewel{
+    display: none;
+}
+@media only screen and (min-width: 1439px) {
+.mob-relics{
+    display: none;
+}
+.relics-title{
+    margin-bottom: 36px;
+}
+.relics-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 190px;
+   }
+.relics-item{
+    width: 542px;
+        height: 177px;
+}
+.relics-item-wrapper{
+    width: 213px;
+        height: 49px;
+}
+
+.relics-img-order{
+    order:2;
+}
+.relics-container{
+    position: relative;
+}
+.relics-jewel{
+    display: block;
+    position: absolute;
+    width: 141px;
+    height: 180px;
+    top: 270px;
+    left: 640px;
+    z-index: 10;
+}
+}
+/* FAQ */
+.faq-section{
+    background-image: url("/img/faq/mob.png");
+    background-repeat: no-repeat;
+    background-position: top 90px center;
+    background-size: 100% 297px;
+}
+.faq-list{
+    margin-top: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.faq-item{
+    border: 1px solid #7df9ff;
+        border-radius: 6px;
+        width: 335px;
+        height: auto;
+        padding: 10px 4px 10px 10px;
+}
+.faq-item-wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.faq-subtitle{
+  width: 322px;  
+}
+@media only screen and (min-width: 1439px) {
+.faq-section{
+    background-image: url("/img/faq/desk.png");
+    background-position: top 162px right 80px;
+    background-size: 630px 499px;
+}
+.faq-list{
+    margin-top: 36px;
+    width: 630px;
+        height: 499px;
+        gap: 20px;
+}
+.faq-item{
+    width: 630px;
+}
+.faq-item-wrapper{
+    justify-content: space-between;
+}
+.faq-subtitle{
+    width: 500px;
+}
+.faq-text{
+    width: 573px;
+    padding: 10px;
+    padding-left: 0;
+    padding-bottom: 6px;
+}
+}
+/* Reviews */
+.reviews-title{
+    margin-bottom: 28px;
+}
+.reviews-swiper-slide{
+    cursor: pointer;
+    border: 1px solid #7df9ff;
+        border-radius: 40px 0;
+        padding: 22px 36px;
+        width: 305px;
+        min-height: 239px;
+}
+.reviews-text{
+    margin-top: 16px;
+    margin-bottom: 18px;
+    width: 233px;
+    height: 65px;
+}
+.reviews-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.reviews-author{
+    font-family: "Cinzel Decorative", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #ffd700;
+}
+.reviews-container{
+    padding-bottom: 80px;
+}
+@media only screen and (min-width: 1439px) {
+ .reviews-title{
+    margin-bottom: 36px;
+ }
+ .reviews-custom-next{
+    transform: rotate(180deg);
+ }
+ .reviews-container {
+     padding-bottom: 150px;
+ }
+}
